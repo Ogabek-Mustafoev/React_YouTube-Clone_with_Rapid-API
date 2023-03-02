@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3 ease;
+}
+:root {
+  --white: #fff;
+  --light: #f0eff5;
+  --gray-dark: #56555e;
+  --dark: #201f1b;
+  --sp-color: #76323f;
+  --primary: #fcfaf5;
+}
+.dark-theme {
+  --white: #090909;
+  --light: #141417;
+  --gray-dark: #adacb5;
+  --dark: rgb(255, 255, 255);
+  --sp-color: #bc4a5f;
+  --primary: #201f1b;
+}
+
+body {
+  background: var(--light);
+  font-family: poppins, sans-serif;
+  min-height: 100vh;
+  max-width: 100vw;
+  color: var(--dark);
+}
+.bgd {
+  background: var(--white) !important;
+}
+.bg {
+  background: var(--primary);
+}
+p {
+  font-size: 0.86rem;
+  color: var(--gray-dark);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark);
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 1px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.search-bar {
+  border: none;
+  outline: none;
+  width: 40vw;
+  background: inherit;
+  color: var(--gray-dark);
+}
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+.category-btn.selected_category {
+  background: #76323f;
+}
+.category-btn.selected_category span {
+  color: #fff;
+}
+.category-btn:hover {
+  background-color: var(--sp-color) !important;
+}
+.category-btn:hover span {
+  color: #fff;
+}
+.category-btn span {
+  color: var(--dark);
+}
+.flex {
+  display: flex;
+}
+.flex span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: #952036;
+}
+.flex small {
+  margin-top: 12px;
+  font-family: cursive;
+  color: var(--sp-color);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.react_player {
+  height: 77vh !important;
+  width: 100% !important;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px !important;
+  }
+  .search-bar {
+    width: 37vw;
+  }
+  .react-player {
+    height: 45vh !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .search-bar {
+    width: 28vw;
+  }
+}
+@media screen and (max-width: 350px) {
+  .search-bar {
+    width: 24vw;
+  }
+}
